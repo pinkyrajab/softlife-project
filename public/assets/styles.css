@@ -1,0 +1,381 @@
+body{
+    background: #f9f9f9;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Montserrat, Arial, sans-serif;
+    color: #333;
+    font-weight: 400;
+}
+
+/* topbar */
+
+ul#top_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    /* margin-right: 30px; */
+    /* margin-top: 5px; */
+}
+
+ul#top_links li {
+    display: inline-block;
+    margin-right: 5px;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 600;
+    /* margin-top: 2px; */
+    margin-bottom: 0px;
+    padding-top: 0;
+}
+
+ul#top_links li a {
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+ul#top_links li a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.cart3{
+    color: black;
+}
+.cart3:hover{
+    color: red;
+}
+/* end top-bar */
+
+.divider{
+   margin: 0px;
+   border-width: 2px;
+}
+.ourEmail a{
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.ourEmail a:hover{
+    color: red;
+}
+
+/* navbar */
+
+.navbar  {
+    background-color:white;
+    margin-top: 0px;
+    padding: 0;
+
+}
+#topbar{
+    background-color:#f9f9f9 ;
+}
+.logo{
+    height: 50px;
+    width: 200px;
+}
+.nav-item{
+    text-transform: capitalize;
+    float: right;
+    padding-right: 25px;
+}
+
+.nav-item a:hover{
+    background-color: #f9f9f9;
+}
+h7:hover{
+    color: red;
+    font-weight: bold;
+}
+
+/* END NABAR  */
+
+/* START CAROUSEL */
+.carousel-item{
+    width: 100%;
+    height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.ad1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/assets/images/carousel/explore.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.ad2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/assets/images/carousel/slide_3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.ad3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/carousel/welcome.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.ad1 p{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ad2 p{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ad3 p{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p button{
+    margin: 0;
+    font-size: 25px;
+}
+p button:hover{
+    color: red;
+    font-weight: bold;
+}
+.mycarouselmarquee{
+    text-shadow: 2px 2px 8px #FF0000;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+
+/* END CAROUSEL */
+h4{
+    text-align: center;
+    text-shadow: 3px 3px 8px #FF0000;
+    font-size: 30px;
+    text-decoration: solid;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .visible-lg{
+       display: none;
+    }
+}
+@media (min-width: 768px) {
+    .sm_what_we_offer{
+       display: none;
+    }
+}
+.info{
+    text-align: left;
+    margin-top: 10%;
+}
+.row{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.restaurant_jpg{
+    padding-top: 20px;
+}
+.hotel_jpg:hover {
+    transition: 0.2s all ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.adventures_jpg:hover{
+    transition: 0.2s all ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.restaurant_jpg:hover{
+    transition: 0.2s all ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.tours_jpg:hover{
+    transition: 0.2s all ease-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.offer{
+    background-color: black;
+    color: white;
+}
+.more{
+      text-align: center;
+      padding: 0;
+  }
+.more button{
+    font-size: 20px;
+    /* transition: all 0.5s; */
+    cursor: pointer;
+}
+.see_more span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+  }
+
+  .see_more span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+  }
+
+ .see_more:hover span {
+    padding-right: 25px;
+  }
+
+  .see_more:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .become-member{
+      text-align: center;
+      margin: 2rem;
+  }
+  .become-member a:link{
+      color: black;
+      text-decoration: none;
+      background-color: white;
+      margin: 20px;
+      padding: 5px;
+
+  }
+  .become-member a:hover{
+      color: red;
+  }
+
+  /* END WHAT WE OFFER */
+
+
+  /* blogs */
+h5{
+    margin-top:20px;
+    text-align: center;
+    text-decoration: solid;
+    /* font-weight: 1000; */
+}
+
+.wild_beast_blog img{
+    height: 280px;
+}
+.all_blog-posts{
+    text-align: right;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.all_blog-posts button:hover{
+    color: red;
+    font-weight: bold;
+}
+/* start footer */
+footer{
+    background: black;
+    color: #fff;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.revealed .col-lg-4 ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.revealed .col-lg-4 ul li a:hover{
+    color:black;
+    background-color: white;
+    font-size: medium;
+    font-weight: 550;
+}
+.revealed ul li{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     text-align: left;
+}
+ ul .help{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 3px 8px #FF0000;
+    padding-top: 10px;
+    padding-bottom: 0;
+
+
+}
+.revealed ul li a{
+    color: red;
+}
+.icons{
+    text-align: center;
+    color: white;
+}
+.icon-white{
+    color: white;
+    margin-right: 2.5rem;
+
+}
+.icon-white:hover{
+    color: red;
+}
+.copyright{
+    text-align: center;
+    margin: 10px;
+    /* margin-bottom: 30px; */
+}
+
+/*user profile css*/
+
+.uploading{
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius:50% ;
+    margin-right:25px ;
+}
