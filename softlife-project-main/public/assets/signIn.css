@@ -1,0 +1,74 @@
+body{
+    /* background-image: url(/assets/images/signIn/backgroundleaf.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+   background-color: bisque;
+    
+}
+.mylogo{
+   text-align: center;
+}
+.signInForm{
+    background-color:bisque;
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+.leaf{
+    width: 50%;
+    height: fit-content;
+}
+.form-group{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.btn{
+    width: 20%;
+    margin-left: 250px;
+    margin-top: 20px; 
+}
+.logIn{
+    margin-left: 230px;
+    margin-top: 20px; 
+}
+@media only screen and (max-width: 880px) {
+    /* For mobile phones: */
+    body{
+        background-image: url(/assets/images/signIn/backgroundleaf.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    .btn{
+        width: 50%;
+        margin-left: 0;
+    }
+    .leaf{
+        height: 0px;
+
+    }
+    .form-group{
+        margin: 0;
+        
+    }
+    .signInForm{
+        float:none;
+        width: 90%;
+    }
+    .logIn{
+        margin-left: 0;
+    }
+  }
+  .text-right{
+      margin: 10px;
+      margin-left: 0;
+  }
+
+  h6{
+      text-align: center;
+  }
+  
