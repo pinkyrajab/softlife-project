@@ -9,32 +9,38 @@ class PagesController extends Controller
 {
     public function home()
     {
-        return view('home');
+        return view('web.home');
     }
 
     public function restaurants()
     {
-        return view('restaurants');
+        return view('web.restaurants');
     }
 
 
     public function hotels()
     {
-        return view('hotels');
+        return view('web.hotels');
     }
 
     public function adventures()
     {
-        return view('adventures');
+        return view('web.adventures');
     }
     public function tours()
     {
-        return view('tours');
+        return view('web.tours');
     }
     public function about()
     {
-        return view ('about');
+        return view ('web.about');
     }
+
+    public function user()
+    {
+        return 'This is the user dashboard';
+    }
+
     public function admin()
     {
         return view ('admin');

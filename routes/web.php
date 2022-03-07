@@ -3,36 +3,38 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Livewire\Admin\DashboardComponent;
+use App\Http\Livewire\Admin\LocationComponent;
+use App\Http\Livewire\Admin\TourComponent;
+use App\Http\Livewire\Admin\UserComponent;
 
+Route::middleware(['middleware'=>'preventBackHistory'])->group(function () {
+    Auth::routes();
+});
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Auth::routes();
-
+// Web Routes
 Route::get('/', [PagesController::class,'home'])->name('home');
+Route::get('who-we-are',[PagesController::class,'about'])->name('about');
 Route::get('/restaurants', [PagesController::class, 'restaurants'])->name('restaurants');
 Route::get('/hotels', [PagesController::class, 'hotels'])->name('hotels');
-// Route::get('/signIn', [PagesController::class,'signIn'])->name('signIn');
-// Route::get('/logIn',[PagesController::class,'logIn'])->name('logIn');
 Route::get('/resetPass', [PagesController::class,'reset'])->name('reset');
 Route::get('/adventures',[PagesController::class,'adventures'])->name('adventures');
 Route::get('/tours',[PagesController::class,'tours'])->name('tours');
-Route::get('/about',[PagesController::class,'about'])->name('about');
-Route::get('/admin',[PagesController::class,'admin'])->name('admin');
-Route::get('/myprofile', [PagesController::class,'myprofile'])->name('myprofile');
-Route::post('profile', 'PagesController@index');
+
+
+// Admin Routes
+Route::prefix('admin')->middleware('auth', 'isAdmin')->group(function() {
+    // Route::get('dashboard',[PagesController::class,'admin'])->name('admin.dashboard');
+    Route::get('dashboard', DashboardComponent::class)->name('admin.dashboard');
+    Route::get('all-users', UserComponent::class)->name('admin.users');
+    Route::get('all-locations', LocationComponent::class)->name('admin.locations');
+    Route::get('tours', TourComponent::class)->name('admin.tours');
+    Route::get('myprofile', [PagesController::class,'myprofile'])->name('myprofile');
+    Route::post('profile', 'PagesController@index');
+});
+
+Route::get('dashboard',[PagesController::class,'user'])->name('user.dashboard');
+
 
 
 
